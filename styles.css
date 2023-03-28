@@ -2,3 +2,28 @@
     margin: 0;
     padding: 0;
 }
+
+.container{
+    background-color: blue;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    flex: 0 0 50%;
+
+}
+
+.image > img{
+    width: 50%;
+    height: auto;
+    justify-self: center;
+}
+
+.right{
+    padding: 24px;
+    background-color: wheat;
+}
