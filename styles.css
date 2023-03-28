@@ -1,11 +1,28 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --marginleft: 50px;
+}
+
+body{
+    background-color: black;
+}
+
+.spacer{
+    height: 12vh;
 }
 
 .container{
-    background-color: blue;
-    width: 80vw;
+
+
+
+    background-color: #f2f2f2;
+    width: 100vw;
+    height: 75vh;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -13,17 +30,99 @@
 }
 
 .image{
-    flex: 0 0 50%;
-
+    height: 100%;
+    flex: 0 0 25%;
 }
 
 .image > img{
-    width: 50%;
-    height: auto;
+    height: 100%;
+    width: 450px;
     justify-self: center;
+    position: relative;
+    z-index: 0;
+}
+
+.logo{
+    padding: 24px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    z-index: 1;
+
 }
 
 .right{
-    padding: 24px;
-    background-color: wheat;
+    font-size: 24px;
+}
+
+.copy{
+    font-weight: bolder;
+    margin-left: var(--marginleft);
+    margin-bottom: 50px;
+    padding-right: 100px;
+}
+
+.form{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 200px;
+    min-height: 300px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+input, label{
+    display: block;
+}
+
+.combo{
+    float: left;
+    margin-right: 35px;
+}
+
+input{
+    width: 260px;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=password]{
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 4px;
+}
+
+input:focus{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
+label{
+    font-size: 9px;
+}
+
+input[type=submit]{
+    font-size: 20px;
+    color: white;
+    background-color: skyblue;
+    border-style: none;
+    padding: 12px;
+    width:200px;
+    border-radius: 5px;
+    margin: 32px;
+    margin-left: 0px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+
+.next{
+    margin-left: var(--marginleft);
+}
+
+a{
+    text-decoration: none;
+    color: skyblue;
 }
