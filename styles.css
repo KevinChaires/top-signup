@@ -1,95 +1,97 @@
-*{
-    margin: 0;
-    padding: 0;
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-:root{
-    --marginleft: 50px;
-}
-
-body{
-    background-color: black;
-}
-
-.spacer{
-    height: 12vh;
-}
-
-.container{
-
-
-
-    background-color: #f2f2f2;
-    width: 100vw;
-    height: 75vh;
-    margin: auto;
+.page{
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.image{
-    height: 100%;
-    flex: 0 0 25%;
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
+    height: 60vh;
+    flex-grow: 0;
 }
 
-.image > img{
+.left{
+    flex: 0 1 35%;
+    display: flex;
+}
+
+.left img{
+    width: 100%;
     height: 100%;
-    width: 450px;
-    justify-self: center;
+}
+
+.bgimg{
     position: relative;
-    z-index: 0;
+    width: 100%;
+    margin-left: -470px;
 }
 
 .logo{
-    padding: 24px;
-    background-color: black;
+    width: 100%;
+    height: 200px;
+    align-self: center;
     color: white;
-    text-align: center;
-    font-size: 1.2rem;
+    background-color: green;
+    position: relative;
     z-index: 1;
-
+    text-align: center;
 }
 
+
 .right{
-    font-size: 24px;
+    flex: 0 1 65%;
+    background-color: whitesmoke;
 }
 
 .copy{
-    font-weight: bolder;
-    margin-left: var(--marginleft);
-    margin-bottom: 50px;
+    margin-top: 150px;
+    padding-left: 50px;
     padding-right: 100px;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 .form{
-    padding-top: 30px;
-    padding-left: 50px;
-    padding-right: 200px;
-    min-height: 300px;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 12px;
+    padding-left: 50px;
+    margin-bottom: 48px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.formcontent{
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content:baseline;
+    margin-bottom: 12px;
 }
 
 input, label{
     display: block;
 }
 
-.combo{
-    float: left;
-    margin-right: 35px;
+
+.combo label{
+    font-size: 12px;
 }
 
 input{
-    width: 260px;
-    padding: 10px;
-    margin-bottom: 12px;
-}
-
-input[type=text], input[type=email], input[type=tel], input[type=password]{
-    border: 1px solid rgb(209, 209, 209);
-    border-radius: 4px;
+    width: 250px;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 6px;
 }
 
 input:focus{
@@ -100,29 +102,24 @@ input:invalid{
     border: 1px solid red;
 }
 
-label{
-    font-size: 9px;
-}
-
-input[type=submit]{
-    font-size: 20px;
-    color: white;
-    background-color: skyblue;
-    border-style: none;
-    padding: 12px;
-    width:200px;
-    border-radius: 5px;
-    margin: 32px;
-    margin-left: 0px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-
-
 .next{
-    margin-left: var(--marginleft);
+    padding-left: 50px;
+    margin-bottom: 200px;
 }
 
-a{
+.create{
+    width: 200px;
+    padding: 12px;;
+    background-color: darkblue;
+    border: 0px;
+    color: white;
+}
+
+.next a{
     text-decoration: none;
-    color: skyblue;
+    color: darkblue
+}
+
+.next a:hover{
+    text-decoration: underline;
 }
