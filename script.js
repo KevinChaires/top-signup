@@ -2,14 +2,6 @@ let pass = document.getElementById("password");
 let veripass = document.getElementById("veripass");
 let message = document.getElementById("message");
 
-// document.getElementById("fname").onchange = function() {myFunction()};
-
-// function myFunction() {
-//   var x = document.getElementById("fname");
-//   x.value = x.value.toUpperCase();
-// }
-
-
 veripass.onchange = function () {checker()};
 
 function checker() {
