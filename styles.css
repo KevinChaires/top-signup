@@ -121,8 +121,12 @@ input:focus{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-input:invalid{
+input:invalid, .error{
     border: 1px solid red;
+}
+
+.errortext{
+    color: red;
 }
 
 .next{

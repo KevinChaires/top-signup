@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="page">
@@ -52,9 +52,10 @@
                                 <label for="password">PASSWORD</label>
                                 <input type="password" id="password" name="password">
                             </div>
-                            <div class="combo">
+                            <div class="combo passcombo">
                                 <label for="veripass">CONFIRM PASSWORD</label>
                                 <input type="password" id="veripass" name="veripass">
+                                <p id="message"> </p>
                             </div>
                         </div>
                     </div>
